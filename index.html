@@ -1,54 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <title>HTML5 Image and Link Examples</title>
     <style>
-      .university-info {
-        background-color: #f4f4f4;
-        padding: 15px;
-        border-radius: 5px;
-        margin-bottom: 20px;
+      * {
+        margin: 10px 0;
+        padding: 0;
       }
-      .university-title {
-        color: #333;
-        margin-bottom: 10px;
+      body,
+      ul,
+      ol,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 5px;
+      }
+      img {
+        max-width: 300px;
+        border: 2px solid #333;
+      }
+      .links {
+        display: flex;
+        gap: 20px;
+        margin: 0;
+        max-width: 50px;
+        flex-direction: column;
+      }
+      .rounded-image {
+        max-width: 120px;
+        aspect-ratio: 1/0.8;
+        border-radius: 10px; /* Adds curved edges to the rectangular image */
+        object-fit: cover;
+      }
+      ul {
+        list-style-type: none;
+      }
+      li {
+        margin: 0;
+        padding: 0;
       }
     </style>
   </head>
   <body>
-    <div class="university-info">
-      <h1 class="university-title">Addis Ababa University (AAU)</h1>
-      <p>
-        Addis Ababa University (Amharic: አዲስ አበባ ዩኒቨርሲት), or AAU, is an
-        Ethiopian higher institute located in Addis Ababa, Ethiopia. The main
-        campus is situated in the Arada subcity, 6 killo area.
-      </p>
-      <h2>University Statistics</h2>
-      <ul>
-        <li>
-          🎓 Undergraduate Students: More than 50,000
-          <small>(regular and continuing education program)</small>
-        </li>
-        <li>🔬 Postgraduate Students: Close to 15,000</li>
-        <li>
-          📚 Academic Fields:
-          <ul>
-            <li>Applied Science</li>
-            <li>Social Science</li>
-            <li>Health Science</li>
-            <li>Engineering</li>
-            <li>Other Fields</li>
-          </ul>
-        </li>
-        <li>
-          👥 Staff: More than 15,000
-          <small>(academic and administrative staff)</small>
-        </li>
-      </ul>
-      <p>
-        AAU is a university in the making, with short-term plans focused on
-        establishing academic infrastructures and facilities, staff recruitment,
-        and manpower development.
-      </p>
+    <h2>inserting an imge</h2>
+    <a href="https://www.example.com">
+      <img
+        src="https://terracegardenfrance.com/cdn/shop/files/il-fullxfull-5086664162-omn0-_1_1024x1024@2x.jpg?v=1729025948"
+        alt="Click to visit flowers"
+        title="Different flowers"
+      />
+    </a>
+    <h2>using a image as a link</h2>
+    <p>when you click the image below it will send you to the other page</p>
+    <div class="links">
+      <img
+        class="rounded-image"
+        src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png"
+        alt="click to visit facebook"
+        title="social media"
+        style="width: 200px"
+        #
+        add
+        inline
+        stayle
+        to
+        change
+        the
+        width
+      />
     </div>
+    <p>Click the links below to open the secified pages</p>
+    <ul>
+      <li><a href="https://www.example.com">First</a></li>
+      <li><a href="https://www.youtube.com">YouTube</a></li>
+      <li><a href="https://www.facebook.com">Facebook</a></li>
+    </ul>
   </body>
 </html>
